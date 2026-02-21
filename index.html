@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join LearnX | Adaptive AI Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0b1120] min-h-screen flex items-center justify-center p-6 overflow-hidden font-['Inter']">
+
+    <div class="light-wrapper">
+        <div class="light-orb orb-blue"></div>
+        <div class="light-orb orb-purple"></div>
+        <div class="light-orb orb-cyan"></div>
+    </div>
+
+    <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-center z-10">
+        
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+            
+            <div class="relative bg-white p-12 md:p-16 rounded-[3rem] shadow-2xl flex flex-col justify-center space-y-10 border border-white/20">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 bg-[#1e293b] rounded-2xl flex items-center justify-center shadow-lg">
+                        <span class="text-white font-black text-2xl">X</span>
+                    </div>
+                    <h1 class="text-3xl font-bold text-[#3b82f6]">LearnX</h1>
+                </div>
+                
+                <div class="space-y-6">
+                    <h2 class="text-5xl font-black text-[#1e293b] leading-[1.1]">Master coding,<br><span class="text-[#3b82f6]">personalized by AI.</span></h2>
+                    <ul class="space-y-4 text-gray-500 font-medium text-lg">
+                        <li class="flex items-center gap-3"><i data-lucide="zap" class="text-yellow-500 w-5 h-5"></i> Adaptive difficulty.</li>
+                        <li class="flex items-center gap-3"><i data-lucide="brain-circuit" class="text-blue-500 w-5 h-5"></i> AI-generated hints.</li>
+                        <li class="flex items-center gap-3"><i data-lucide="line-chart" class="text-purple-500 w-5 h-5"></i> Deep analytics.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card rounded-[3.5rem] p-10 md:p-16 w-full border border-white/10 shadow-2xl">
+            <div class="mb-10 text-center md:text-left">
+                <h3 class="text-3xl font-extrabold text-white mb-2">Create Account</h3>
+                <p class="text-gray-400">Start your adaptive journey today.</p>
+            </div>
+
+            <form id="registerForm" class="space-y-6">
+                <div class="space-y-2">
+                    <label class="text-xs font-bold text-gray-500 uppercase tracking-widest ml-1">Full Name</label>
+                    <input type="text" placeholder="John Doe" class="input-glow" required>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-xs font-bold text-gray-500 uppercase tracking-widest ml-1">Email Address</label>
+                    <input type="email" placeholder="name@company.com" class="input-glow" required>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-xs font-bold text-gray-500 uppercase tracking-widest ml-1">Password</label>
+                    <input type="password" placeholder="••••••••" class="input-glow" required>
+                </div>
+
+                <button type="submit" class="submit-glow-btn mt-6">
+                    Start Learning Now
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
